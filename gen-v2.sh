@@ -13,7 +13,7 @@ cat /dev/null > ./data/empty.rc
 cat /dev/null > ./data/hostname
 cat /dev/null > ./data/private_key
 
-$TOR --quiet --PublishHidServDescriptors 0 -f ./data/empty.rc --defaults-torrc ./data/empty.rc --DataDirectory ./data --HiddenServiceDir ./data --HiddenServicePort 9999 --SocksPort 0 --FetchServerDescriptors 0 --DisableNetwork 1 --PidFile ./data/pid.txt &
+$TOR --quiet --PublishHidServDescriptors 0 -f ./data/empty.rc --defaults-torrc ./data/empty.rc --DataDirectory ./data --HiddenServiceDir ./data --HiddenServiceVersion 2 --HiddenServicePort 9999 --SocksPort 0 --FetchServerDescriptors 0 --DisableNetwork 1 --PidFile ./data/pid.txt &
 
 while true
 do
