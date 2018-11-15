@@ -1,10 +1,9 @@
 #!/bin/bash
 #
 
-LD_LIBRARY_PATH="$HOME/tor-browser_en-US/Browser/TorBrowser/Tor"
-export LD_LIBRARY_PATH
-
-TOR=$HOME/tor-browser_en-US/Browser/TorBrowser/Tor/tor
+TORDIR=$HOME/tor-browser_en-US/Browser/TorBrowser/Tor
+TOR=$TORDIR/tor
+export LD_LIBRARY_PATH=$TORDIR
 
 mkdir -p ./data
 chmod go-rwx ./data
